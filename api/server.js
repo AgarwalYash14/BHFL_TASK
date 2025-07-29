@@ -38,7 +38,7 @@ function processData(data) {
     return { odd, even, alpha, special, sum: sum.toString(), concat }
 }
 
-app.post('/api/bfhl', (req, res) => {
+app.post('/bfhl', (req, res) => {
     const { data } = req.body
     if (!Array.isArray(data)) {
         return res
